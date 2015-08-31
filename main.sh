@@ -38,6 +38,7 @@ cd ~
 curl -L https://github.com/lawrancej/starterupper/archive/master.zip 2> /dev/null > starterupper.zip
 # Extract
 unzip -o starterupper.zip > /dev/null 2>&1
+jar -xf starterupper.zip
 # Move into hidden folder
 rm -rf .starterupper
 mv starterupper-master .starterupper

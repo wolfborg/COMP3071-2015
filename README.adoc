@@ -1,6 +1,8 @@
 = COMP3071: Introduction to Programming Languages
 
-== September 1: Introductions
+== September 1
+
+=== Introduce yourself
 
 Welcome! Let's get to know each other with an icebreaker. Answer these questions:
 
@@ -8,6 +10,7 @@ Welcome! Let's get to know each other with an icebreaker. Answer these questions
 * Why is Computer Science your major?
 * Tell us something nobody else in the room knows about you.
 
+=== About this course
 This course introduces programming languages (hence the name) beyond the
 familiar structured imperative object-oriented and procedural https://en.wikipedia.org/wiki/Programming_paradigm[programming paradigms].
 
@@ -43,7 +46,7 @@ Please download SWI-Prolog, Haskell Platform and SBCL (links in table).
 
 |===
 
-== September 3: Software setup
+== September 3
 
 === Install language implementations
 
