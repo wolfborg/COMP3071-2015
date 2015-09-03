@@ -82,6 +82,10 @@ Press `Shift-Insert` to paste in Git Bash.
 curl https://gitlab.com/lawrancej/COMP3071-2015/raw/master/main.sh | bash
 ----
 
+=== Intermission
+
+Time to rest.
+
 === Preliminaries
 
 A *set* is unordered and has no duplicates (no repeated values).
