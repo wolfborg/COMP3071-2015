@@ -140,6 +140,11 @@ A *grammar* constructs a language; *regular expressions* construct *regular* lan
 
 === Regular expressions
 
+----
+cd ~/COMP3071-2015
+grep -E "^[a-f]+$" american-english.txt | less
+----
+
 A *regular expression* (regex) defines a language with these primitives and operators.
 
 [options="header"]
