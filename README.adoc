@@ -12,7 +12,8 @@ Welcome! Let's get to know each other with an icebreaker. Answer these questions
 
 === About this course
 This course introduces programming languages (hence the name) beyond the
-familiar structured imperative object-oriented and procedural https://en.wikipedia.org/wiki/Programming_paradigm[programming paradigms].
+familiar structured imperative object-oriented and procedural
+https://en.wikipedia.org/wiki/Programming_paradigm[programming paradigms].
 
 We'll have a midterm, labs and assignments, but for the final project,
 we'll implement a compiler or interpreter for a programming language.
@@ -50,7 +51,8 @@ Please download SWI-Prolog, Haskell Platform and SBCL (links in table).
 
 === Install language implementations
 
-Download SWI-Prolog, Haskell Platform and SBCL (links in table above), if you haven't already done so.
+Download SWI-Prolog, Haskell Platform and SBCL (links in table above),
+if you haven't already done so.
 
 === Install Git and frontends
 
@@ -70,6 +72,8 @@ Linux:: http://git-scm.com/download/linux[Install git] using your package manage
 +
 NOTE: Don't forget to use +sudo+ with your package manager.
 
+Don't forget a https://notepad-plus-plus.org/download/v6.8.2.html[text editor].
+
 === Run starterupper
 
 Starterupper sets up git and project hosting for this class;
@@ -84,7 +88,7 @@ curl https://gitlab.com/lawrancej/COMP3071-2015/raw/master/main.sh | bash
 
 === Intermission
 
-Time to rest.
+Let's catch our breath.
 
 === Preliminaries
 
@@ -142,6 +146,7 @@ A *grammar* constructs a language; *regular expressions* construct *regular* lan
 
 ----
 cd ~/COMP3071-2015
+# Hexadecimal words
 grep -E "^[a-f]+$" american-english.txt | less
 ----
 
@@ -185,10 +190,10 @@ A *regular expression* (regex) defines a language with these primitives and oper
 
 |===
 
-The primitives and operators above are *complete*:
-we can define other regular expression operators in terms of them.
-For example, `a?` optionally matches `a`; `a? = a|""`.
-Another example: `a+` matches `a` 1 or more times; `a+ = a*a`.
+The primitives and operators above can define other regular expression operators
+in terms of themselves.
+For example, `a?` optionally matches `a`. This is equivalent to: `a|""`.
+Another example: `a+` matches `a` 1 or more times. This is equivalent to `a*a`.
 
 Trivially, finite languages are regular:
 
@@ -224,3 +229,19 @@ The example grammar below defines a small subset of English, with an example sen
 The example grammar is context-free because the left side of each arrow is a nonterminal.
 
 image:http://lawrancej.github.io/COMP603-2015/scribbles/example-grammar.png[Example grammar and sentence]
+
+=== September 4
+
+Pull from upstream.
+
+----
+cd ~/COMP3071-2015
+git pull upstream master
+----
+
+https://en.wikipedia.org/wiki/Prolog[Prolog] is a https://en.wikipedia.org/wiki/Logic_programming[logic programming language].
+Prolog typically compiles into code for the https://en.wikipedia.org/wiki/Warren_Abstract_Machine[WAM]
+
+In SWI-Prolog, File -> Consult `~/COMP3071-2015/in-class/intro.pl` for an introduction to Prolog syntax.
+Open the same file in an editor, and run queries.
+
