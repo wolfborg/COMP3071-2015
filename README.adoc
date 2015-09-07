@@ -49,10 +49,12 @@ Please download SWI-Prolog, Haskell Platform and SBCL (links in table).
 
 == September 3
 
-=== Install language implementations
+=== Install programming languages and a text editor
 
 Download SWI-Prolog, Haskell Platform and SBCL (links in table above),
 if you haven't already done so.
+
+Install a decent text editor (e.g., https://notepad-plus-plus.org/[Notepad++], https://atom.io/[Atom]).
 
 === Install Git and frontends
 
