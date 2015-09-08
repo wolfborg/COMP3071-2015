@@ -28,7 +28,7 @@ Please download SWI-Prolog, Haskell Platform and SBCL (links in table).
 |Prolog
 |http://www.swi-prolog.org/download/stable[SWI-Prolog]
 |Logic programming
-|http://www.learnprolognow.org/lpnpage.php?pageid=online[Learn Prolog Now!]
+|http://www.learnprolognow.org/lpnpage.php?pageid=online[Learn Prolog Now!] and https://en.wikibooks.org/wiki/Prolog[Prolog wikibook]
 
 |Haskell
 |https://www.haskell.org/platform/[Haskell Platform]
@@ -246,4 +246,6 @@ Prolog typically compiles into code for the https://en.wikipedia.org/wiki/Warren
 
 In SWI-Prolog, File -> Consult `~/COMP3071-2015/in-class/intro.pl` for an introduction to Prolog syntax.
 Open the same file in an editor, and run queries.
+
+=== September 8
 
