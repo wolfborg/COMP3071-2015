@@ -22,5 +22,10 @@ descend(X,Y):- child(X,Y).
 descend(X,Y):- child(X,Z), child(Z,Y).
  */
 
+% Beware: this won't work
+% descend(X,Z):- descend(Y,Z),child(X,Y). /* recursive case */
+% descend(X,Y):- child(X,Y). /* base case */
+
+
 descend(X,Y):- child(X,Y). /* base case */
-descend(X,Z):- child(X,Y),descend(Y,Z). /* recursive case */
+descend(X,Z):- child(X,Y), descend(Y,Z). /* recursive case */
