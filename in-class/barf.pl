@@ -26,6 +26,9 @@ descend(X,Y):- child(X,Z), child(Z,Y).
 % descend(X,Z):- descend(Y,Z),child(X,Y). /* recursive case */
 % descend(X,Y):- child(X,Y). /* base case */
 
-
 descend(X,Y):- child(X,Y). /* base case */
 descend(X,Z):- child(X,Y), descend(Y,Z). /* recursive case */
+
+% Hint: This is similar to the listtrans function
+a2b([],[]).
+a2b([a|Tail],[b|Tail2]):- a2b(Tail,Tail2).
