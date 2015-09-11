@@ -330,7 +330,7 @@ Use the "Animal Logic Puzzle" available here: http://kids.lovetoknow.com/wiki/Pr
 Stage -> Commit -> Push
 
 ----
-cd ~/COMP2270-2015
+cd ~/COMP3071-2015
 touch lab1.pl
 git add lab1.pl
 git commit -m "Added lab 1 solution."
