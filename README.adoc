@@ -33,7 +33,7 @@ Please download SWI-Prolog, Haskell Platform and SBCL (links in table).
 |Haskell
 |https://www.haskell.org/platform/[Haskell Platform]
 |Functional programming
-|http://book.realworldhaskell.org/read/[Real World Haskell]
+|http://book.realworldhaskell.org/read/[Real World Haskell] and http://learnyouahaskell.com/[Learn you a Haskell (for great good)]
 
 |LISP
 |http://www.sbcl.org/platform-table.html[SBCL]
@@ -336,3 +336,9 @@ git add lab1.pl
 git commit -m "Added lab 1 solution."
 git push origin master
 ----
+
+== September 15
+
+* https://www.destroyallsoftware.com/talks/wat[WAT]
+* http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/[PHP: A fractal of bad design]
+* http://foldl.com/[Reduce (foldl)] and http://foldr.com/[(foldr)]
