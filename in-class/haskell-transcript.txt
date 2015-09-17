@@ -1,0 +1,174 @@
+GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
+Prelude> 2
+2
+Prelude> 2+2
+4
+Prelude> 2+2*5
+12
+Prelude> 2^3
+8
+Prelude> 2^64
+18446744073709551616
+Prelude> 2^128
+340282366920938463463374607431768211456
+Prelude> 10^60
+1000000000000000000000000000000000000000000000000000000000000
+Prelude> 10^10
+10000000000
+Prelude> 10^100
+10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Prelude> mod 3 2
+1
+Prelude> 3 mod 2
+
+<interactive>:18:1:
+    Non type-variable argument
+      in the constraint: Num ((a -> a -> a) -> a -> t)
+    (Use FlexibleContexts to permit this)
+    When checking that ‘it’ has the inferred type
+      it :: forall a a1 t.
+            (Integral a, Num a1, Num ((a -> a -> a) -> a1 -> t)) =>
+            t
+Prelude> 3 `mod` 2
+1
+Prelude> 
+Prelude> 3 / 2
+1.5
+Prelude> 3 `div` 2
+1
+Prelude> 10^100
+10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Prelude> [1,2,3,4]
+[1,2,3,4]
+Prelude> sum [1,2,3,4]
+10
+Prelude> sum [1,2,3,4,5,6,7,78,8]
+114
+Prelude> ["hello","cruel","world"] ++ ["and","goodbye"]
+["hello","cruel","world","and","goodbye"]
+Prelude> ["hello","cruel","world"] ++ [1,2,3]
+
+<interactive>:28:31:
+    No instance for (Num [Char]) arising from the literal ‘1’
+    In the expression: 1
+    In the second argument of ‘(++)’, namely ‘[1, 2, 3]’
+    In the expression: ["hello", "cruel", "world"] ++ [1, 2, 3]
+Prelude> :t ["hello","world"]
+["hello","world"] :: [[Char]]
+Prelude> :t "hello, world"
+"hello, world" :: [Char]
+Prelude> :t (++)
+(++) :: [a] -> [a] -> [a]
+Prelude> :t (sum)
+(sum) :: (Num a, Foldable t) => t a -> a
+Prelude> :t foldl
+foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+Prelude> :t foldr
+foldr :: Foldable t => (a -> b -> b) -> b -> t a -> b
+Prelude> 
+Prelude> 
+Prelude> 
+Prelude> foldl (+) 0 [1,2,3,4,5]
+15
+Prelude> sum [1,2,3,4,5]
+15
+Prelude> let fortune_cookie x = x ++ "."
+Prelude> fortune_cookie "hello"
+"hello."
+Prelude> let fortune_cookie x = x ++ "in bed."
+Prelude> fortune_cookie "you will have great fortune"
+"you will have great fortunein bed."
+Prelude> let fortune_cookie x = x ++ ", in bed."
+Prelude> fortune_cookie "you will have great fortune"
+"you will have great fortune, in bed."
+Prelude> :t fortune_cookie
+fortune_cookie :: [Char] -> [Char]
+Prelude> :t (++)
+(++) :: [a] -> [a] -> [a]
+Prelude> let my_own_sum x = foldl (+) 0 x
+Prelude> my_own_sum [1,2,3,4,5]
+15
+Prelude> sum [1,2,3,4,5]
+15
+Prelude> :t (foldl)
+(foldl) :: Foldable t => (b -> a -> b) -> b -> t a -> b
+Prelude> prod
+
+<interactive>:52:1:
+    Not in scope: ‘prod’
+    Perhaps you meant ‘pred’ (imported from Prelude)
+Prelude> product
+
+<interactive>:53:1:
+    No instance for (Show (t0 a0 -> a0))
+      (maybe you haven't applied enough arguments to a function?)
+      arising from a use of ‘print’
+    In the first argument of ‘print’, namely ‘it’
+    In a stmt of an interactive GHCi command: print it
+Prelude> let my_own_sum x = foldl (+) 0 x
+Prelude> let my_own_sum x = foldl (+) 0 x
+Prelude> let my_own_sum = foldl (+) 0
+Prelude> :t
+
+<no location info>: not an expression: ‘’
+Prelude> :t my_own_sum
+my_own_sum :: (Num b, Foldable t) => t b -> b
+Prelude> let increment = (+) 1
+Prelude> increment 2
+3
+Prelude> increment 3
+4
+Prelude> let it_rain = foldl increment 0
+
+<interactive>:62:21:
+    Occurs check: cannot construct the infinite type: b ~ a -> b
+    Expected type: b -> a -> b
+      Actual type: (a -> b) -> a -> b
+    Relevant bindings include
+      it_rain :: t a -> b (bound at <interactive>:62:5)
+    In the first argument of ‘foldl’, namely ‘increment’
+    In the expression: foldl increment 0
+Prelude> :t increment
+increment :: Num a => a -> a
+Prelude> :t foldl
+foldl :: Foldable t => (b -> a -> b) -> b -> t a -> b
+Prelude> let increment = (+) 1
+Prelude> :t increment
+increment :: Num a => a -> a
+Prelude> let increment = (+)
+Prelude> let it_rain = foldl increment 0
+Prelude> let my_own_sum = foldl (+) 0
+Prelude> let product = foldl (*) 1
+Prelude> product [1,2,3,4,5]
+120
+Prelude> let countdown x = if x == 0 then [] else x:(countdown x-1)
+
+<interactive>:72:5:
+    Non type-variable argument in the constraint: Num [t]
+    (Use FlexibleContexts to permit this)
+    When checking that ‘countdown’ has the inferred type
+      countdown :: forall t. (Eq t, Num t, Num [t]) => t -> [t]
+Prelude> let countdown x = if x = 0 then [] else x:(countdown x-1)
+
+<interactive>:73:19:
+    parse error in if statement: missing required then and else clauses
+Prelude> let countdown x = if x == 0 then [] else x:(countdown x-1)
+
+<interactive>:74:5:
+    Non type-variable argument in the constraint: Num [t]
+    (Use FlexibleContexts to permit this)
+    When checking that ‘countdown’ has the inferred type
+      countdown :: forall t. (Eq t, Num t, Num [t]) => t -> [t]
+Prelude> let product = foldl (*) 1
+Prelude> product [1,2,3,4,5]
+120
+Prelude> :t filter
+filter :: (a -> Bool) -> [a] -> [a]
+Prelude> filter (\x -> x `mod` 2 == 0) [1,2,3,4,5,6,7,8,9]
+[2,4,6,8]
+Prelude> let foo = [1,2,3,4,5,6,7,8,9]
+Prelude> filter (\x -> x `mod` 2 == 0) foo
+[2,4,6,8]
+Prelude> foo
+[1,2,3,4,5,6,7,8,9]
+Prelude> 
