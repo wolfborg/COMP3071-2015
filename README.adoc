@@ -342,3 +342,11 @@ git push origin master
 * https://www.destroyallsoftware.com/talks/wat[WAT]
 * http://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/[PHP: A fractal of bad design]
 * http://foldl.com/[Reduce (foldl)] and http://foldr.com/[(foldr)]
+
+== September 17
+
+* https://www.haskell.org/hoogle/[Hoogle (Haskell documentation)]
+
+== September 18
+
+Pull from me. Look in labs/Lab1.hs
