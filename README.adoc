@@ -346,3 +346,7 @@ git push origin master
 == September 17
 
 * https://www.haskell.org/hoogle/[Hoogle (Haskell documentation)]
+
+== September 18
+
+Pull from me. Look in labs/Lab1.hs
