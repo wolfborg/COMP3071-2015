@@ -349,4 +349,17 @@ git push origin master
 
 == September 18
 
-Pull from me. Look in labs/Lab1.hs
+Pull from me. Look in `labs/Lab1.hs`
+
+----
+cd ~/COMP3071-2015
+git pull upstream master
+----
+
+Solve problems.
+
+----
+cd ~/COMP3071-2015
+git commit -am "Lab 1 done"
+git push origin master
+----
