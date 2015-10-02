@@ -392,6 +392,8 @@ Monads and typeclasses
 Use the tic-tac-toe source as inspiration.
 Feel free to work in pairs or small groups of 3.
 
+https://hackage.haskell.org/package/gloss[I'm glossing over gloss]
+
 ----
 cd ~/COMP3071-2015
 git pull upstream master
