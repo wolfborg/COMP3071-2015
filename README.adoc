@@ -393,6 +393,7 @@ cd ~/COMP3071-2015
 git pull upstream master
 cabal update
 cabal install gloss
+cd labs
 ghc tictactoe.hs
 tictactoe.exe
 ----
