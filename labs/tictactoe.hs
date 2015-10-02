@@ -30,6 +30,12 @@ validMove board i j
     | i < 0 || i >= 3 || j < 0 || j >= 3 = False
     | otherwise = Blank == board Map.! (i,j)
 
+{-
+validMove board i j = 
+    if i < 0 || i >= 3 || j < 0 || j >= 3 then False
+    else Blank == board Map.! (i,j)
+-}
+
 -- X starts the game
 initialGame = Game initialBoard X
 
@@ -55,7 +61,7 @@ takeTurn game@Game { board=b, player=p } (i, j)
     | otherwise = game
  where
      newGame = Game {
-         board = Map.adjust (\_ -> p) (i,j) b,
+         board = Map.adjust (\_ -> p) (i,j) b, -- board[(i,j}] = p (it doesn't change the map, it replaces it)
          player = switch p
     }
 
@@ -82,7 +88,7 @@ handleMouse :: Gloss.Event -> Game -> Game
 handleMouse (Gloss.EventKey (Gloss.MouseButton Gloss.LeftButton) Gloss.Down _ (x, y)) game@(Game board player)
     | gameOver board = game
     | otherwise = takeTurn game (i, j)
- where i = round $ (y+160) / 160
+ where i = round $ (y+160) / 160 -- translate pixel coordinates into grid coordinates
        j = round $ (x+240) / 160
 
 -- don't care about the other events

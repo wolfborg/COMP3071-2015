@@ -388,6 +388,10 @@ Monads and typeclasses
 
 == October 2
 
+*Challenge*: Make a http://mypuzzle.org/sliding[sliding tile puzzle], or Connect4, or a snake game, or hangman, or pong.
+Use the tic-tac-toe source as inspiration.
+Feel free to work in pairs or small groups of 3.
+
 ----
 cd ~/COMP3071-2015
 git pull upstream master
