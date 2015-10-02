@@ -395,5 +395,5 @@ cabal update
 cabal install gloss
 cd labs
 ghc tictactoe.hs
-tictactoe.exe
+./tictactoe.exe
 ----
