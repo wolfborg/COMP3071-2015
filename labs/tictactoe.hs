@@ -1,8 +1,8 @@
 -- Putting it all together: Tic Tac Toe
 -- cabal update
 -- cabal install gloss
--- ghc tictactoegloss.hs
--- tictactoegloss.exe
+-- ghc tictactoe.hs
+-- tictactoe.exe
 
 -- import is just like Java, but you can give modules (akin to Java packages) their own local name
 import qualified Graphics.Gloss.Interface.Pure.Game as Gloss
