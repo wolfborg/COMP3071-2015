@@ -403,3 +403,13 @@ cd labs
 ghc tictactoe.hs
 ./tictactoe.exe
 ----
+
+Also, https://en.wikipedia.org/wiki/Persistent_data_structure[Persistent data structures]
+
+== October 6
+
+http://www.willamette.edu/~fruehr/haskell/evolution.html[The evolution of a Haskell programmer]
+
+== October 23
+
+Present "Midterm" project
