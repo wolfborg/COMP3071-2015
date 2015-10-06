@@ -408,7 +408,8 @@ Also, https://en.wikipedia.org/wiki/Persistent_data_structure[Persistent data st
 
 == October 6
 
-http://www.willamette.edu/~fruehr/haskell/evolution.html[The evolution of a Haskell programmer]
+* http://www.willamette.edu/~fruehr/haskell/evolution.html[The evolution of a Haskell programmer]
+* https://github.com/benl23x5/gloss[Gloss examples]
 
 == October 23
 
