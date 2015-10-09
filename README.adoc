@@ -428,6 +428,11 @@ On Gitlab:: Left hand side Group of people `Members` -> Add Members -> `lawrance
 cd
 git clone the-repo-goes-here
 ----
+. If you're using a shared repo, you're done!
+Otherwise, be sure to add remotes for each remote
+----
+git remote add remote-goes-here
+----
 . Decide on a program to implement
 . Determine the data and functions in the Model
 . Determine how to show stuff to the user
