@@ -417,7 +417,12 @@ http://www.stilldrinking.org/programming-sucks[Programming sucks]
 
 TODO:
 
-. Setup your repo and make sure I have access to it (I'm `lawrancej` on github and gitlab)
+. Create your midterm project repo on https://github.com/new[github] or https://gitlab.com/projects/new[gitlab]
+. Add collaborators in your team:
+On Github:: Right hand side `Settings` -> Left hand side `Collaborators`
+On Gitlab:: Left hand side Group of people `Members`
+. Make sure I have access to it (I'm `lawrancej` on github and gitlab)
+. Make sure everybody on the team has access
 . Decide on a program to implement
 . Determine the data and functions in the Model
 . Determine how to show stuff to the user
