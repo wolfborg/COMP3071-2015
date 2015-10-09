@@ -411,6 +411,18 @@ Also, https://en.wikipedia.org/wiki/Persistent_data_structure[Persistent data st
 * http://www.willamette.edu/~fruehr/haskell/evolution.html[The evolution of a Haskell programmer]
 * https://github.com/benl23x5/gloss[Gloss examples]
 
+== October 9
+
+http://www.stilldrinking.org/programming-sucks[Programming sucks]
+
+TODO:
+
+. Setup your repo and make sure I have access to it (I'm `lawrancej` on github and gitlab)
+. Decide on a program to implement
+. Determine the data and functions in the Model
+. Determine how to show stuff to the user
+. Determine how to handle events from the user
+
 == October 23
 
 Present "Midterm" project
