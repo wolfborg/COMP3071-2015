@@ -438,6 +438,13 @@ git remote add remote-goes-here
 . Determine how to show stuff to the user
 . Determine how to handle events from the user
 
+== October 13
+
+Models of computation:
+
+* Turing machines, P'', Brainfuck
+* Lambda calculus, Haskell
+
 == October 23
 
 Present "Midterm" project
