@@ -3,6 +3,7 @@ module PlayingCards (Suit (Spades, Hearts, Clubs, Diamonds), Rank, Card, pack, s
 import System.Random
 import Data.Map as Map
 import Data.List
+import Debug.Trace
 
 -- Let's play cards
 data Suit = Spades | Hearts | Clubs | Diamonds deriving (Show, Eq, Enum)
