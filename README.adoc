@@ -445,6 +445,21 @@ Models of computation:
 * Turing machines, P'', Brainfuck
 * Lambda calculus, Haskell
 
+== October 15
+
+Work on midterm project.
+
+== October 16
+
+Highlights from https://hackage.haskell.org/package/base-4.8.1.0/docs/[Haskell's API documentation]:
+
+* https://hackage.haskell.org/package/base-4.8.1.0/docs/Prelude.html[Built-in functions]
+* https://hackage.haskell.org/package/base-4.8.1.0/docs/Data-List.html[Handy list functions]
+* https://hackage.haskell.org/package/containers-0.5.6.3/docs/Data-Map-Strict.html[Handy map (dictionary) functions]
+* https://hackage.haskell.org/package/base-4.8.1.0/docs/Control-Monad.html[Sequencing actions]
+* https://hackage.haskell.org/package/base-4.8.1.0/docs/Debug-Trace.html[Debugging]
+* https://hackage.haskell.org/package/base-4.8.1.0/docs/System-IO.html[Input/Output]
+
 == October 23
 
 Present "Midterm" project

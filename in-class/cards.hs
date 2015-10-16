@@ -1,6 +1,8 @@
--- 
+module PlayingCards (Suit (Spades, Hearts, Clubs, Diamonds), Rank, Card, pack, shuffle, deal) where
+
 import System.Random
 import Data.Map as Map
+import Data.List
 
 -- Let's play cards
 data Suit = Spades | Hearts | Clubs | Diamonds deriving (Show, Eq, Enum)
@@ -23,18 +25,6 @@ instance Show Card where
 -- Pack of cards
 pack = [Card r s | r <- [Two .. Ace], s <- [Spades .. Diamonds]]
 
-data Facing = Up | Down
-
-data Pile {
-    cards :: [Card],
-    direction :: Facing
-}
-
--- The idea is that maybe we number the piles, or refer to them by name or an enum
-data Game a {
-    table :: Map a Pile
-}
-
 -- Source: http://en.literateprograms.org/Fisher-Yates_shuffle_%28Haskell%29
 shuffle :: [a] -> IO [a]
 shuffle l = shuffle' l []
@@ -45,4 +35,9 @@ shuffle' l acc =
      let (lead, x:xs) = splitAt k l
      shuffle' (lead ++ xs) (x:acc)
 
--- deal
+-- Deal cards into piles of a specified size
+deal :: [Card] -> [Int] -> [[Card]]
+deal deck [] = [deck]
+deal deck (pile:piles) = (take pile deck):(deal (drop pile deck) piles)
+
+type Game = [[Card]]
