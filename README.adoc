@@ -460,6 +460,18 @@ Highlights from https://hackage.haskell.org/package/base-4.8.1.0/docs/[Haskell's
 * https://hackage.haskell.org/package/base-4.8.1.0/docs/Debug-Trace.html[Debugging]
 * https://hackage.haskell.org/package/base-4.8.1.0/docs/System-IO.html[Input/Output]
 
-== October 23
+== October 30
 
 Present "Midterm" project
+
+== November 3
+
+* ASTs
+* AST traversal
+
+== November 5
+
+* Parsing with ANTLR
+
+== November 6
+

@@ -6,12 +6,13 @@ import Data.List
 import Debug.Trace
 
 -- Let's play cards
-data Suit = Spades | Hearts | Clubs | Diamonds deriving (Show, Eq, Enum)
+data Suit = Spades | Hearts | Clubs | Diamonds deriving (Show, Eq, Ord, Enum)
 
 -- No matter what the suit happens to be
 -- no one is better than the other
-instance Ord Suit where
-    x <= y = False
+-- if we do this, bad things happen with Maps (think about it)
+--instance Ord Suit where
+--    x <= y = False
 
 data Rank = Two | Three | Four | Five | Six | Seven | Eight | Nine | Ten | Jack | Queen | King | Ace deriving (Show, Eq, Ord, Enum)
 
