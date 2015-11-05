@@ -471,7 +471,7 @@ Present "Midterm" project
 
 == November 5
 
-* Parsing with ANTLR
+* http://www.antlr.org/[Parsing with ANTLR]
 
 == November 6
 
