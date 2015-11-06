@@ -492,10 +492,11 @@ cd ~/COMP3071-2015/
 git pull upstream master
 cd language/
 ./gradlew build
-./gradlew eclipse
-find .
+git checkout -- src/main/java/Calculator.java
 git checkout -- src/main/java/Main.java
 git checkout -- src/main/java/Printer.java
+./gradlew eclipse
+find .
 ----
 
 In Eclipse:
@@ -505,3 +506,7 @@ In Eclipse:
 . Next
 . Select root directory `COMP3071-2015`
 . Finish
+
+=== Lab
+ 
+Write a calculator, using the Visitor pattern.
