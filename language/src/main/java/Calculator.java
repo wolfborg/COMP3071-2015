@@ -1,21 +1,9 @@
 
 public class Calculator extends ExprBaseVisitor<Double> {
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
 	@Override
 	public Double visitProg(ExprParser.ProgContext ctx) {
-		return visitChildren(ctx);
+		return this.visit(ctx.getChild(0));
 	}
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
 	@Override
 	public Double visitExpr(ExprParser.ExprContext ctx) {
 		return visitChildren(ctx);
