@@ -484,3 +484,12 @@ echo "100+100*7" | ./grun.sh Expr prog -gui
 
 * http://www.antlr.org/api/Java/index.html?overview-summary.html[ANTLR runtime API]
 * https://github.com/antlr/grammars-v4[ANTLR grammars]
+
+----
+cd ~/COMP3071-2015/
+git pull upstream master
+cd language/
+./gradlew build
+./gradlew eclipse
+find .
+----
