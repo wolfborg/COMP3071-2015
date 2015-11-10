@@ -510,3 +510,17 @@ In Eclipse:
 === Lab
  
 Write a calculator, using the Visitor pattern.
+
+*Hint*: Study `Parser.java`.
+Also, assume that we'll just parse one expression for now.
+Even though the grammar is capable of parsing more.
+
+== November 10
+
+To update generated code:
+
+----
+./gradlew generateGrammarSource
+----
+
+* https://en.wikipedia.org/wiki/PL/0[PL/0 grammar]
